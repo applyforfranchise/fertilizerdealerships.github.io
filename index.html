@@ -237,12 +237,12 @@
                 <div class="col-lg-7">
                     <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
                         <h4 class=" text-center mb-3 border-bottom pb-2">SUBMIT ENQUIRY DETAILS FOR DEALERSHIP</h4>
-                        <form id="main-contact-form" method="POST" class="php-email-form" action="./submitForm.php">
+                        <form id="main-contact-form" method="POST" class="php-email-form" action="https://fertilizersdistributorship.in/process.php">
                         <div class="row g-3">
                             
                             <div class="col-sm-12">
                                 <div class="form-floating">
-                                   <select class="form-select" id="dealership" name="dealership" required>
+                                   <select class="form-select" id="dealership" name="franchise" required>
                                     <option selected disabled value="">Select Dealership</option>
                                     <option>iffco</option>
                                    </select>
@@ -251,26 +251,26 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" minlength="3" maxlength="25" class="form-control bg-light border-0" name="name" id="name" placeholder="Full Name" required>
+                                    <input type="text" minlength="3" maxlength="25" class="form-control bg-light border-0" name="fullname" id="name" placeholder="Full Name" required>
                                     <label for="gname">Full Name</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="email" minlength="6" maxlength="35" class="form-control bg-light border-0" name="gmail" id="gmail" placeholder="Email" required>
+                                    <input type="email" minlength="6" maxlength="35" class="form-control bg-light border-0" name="email" id="gmail" placeholder="Email" required>
                                     <label for="gmail">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="number" class="form-control bg-light border-0" maxlength="10" maxlength="10" name="mobile" id="mobile" placeholder="Mobile Number" required>
+                                    <input type="number" class="form-control bg-light border-0" maxlength="10" maxlength="10" name="phone" id="mobile" placeholder="Mobile Number" required>
                                     <label for="cname">Your Mobile Number</label>
                                 </div>
                             </div>
                            
                             <div class="col-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0"  name="city" id="city" placeholder="City" required>
+                                    <input type="text" class="form-control bg-light border-0"  name="address" id="city" placeholder="City" required>
                                     <label for="message">City</label>
                                 </div>
                             </div>
@@ -849,94 +849,94 @@ var dealership= $("#dealership").val();
                 <div class="col-lg-12">
                     <div class="bg-dark rounded p-3 p-sm-4">
                         <h4 class="text-white text-center mb-3 border-bottom pb-2">SUBMIT ENQUIRY DETAILS FOR DEALERSHIP</h4>
-                        <form id="main-contact-form" method="POST" class="php-email-form" action="./submitForm.php">
-                        <div class="row g-3">
-                            
-                            <div class="col-sm-12">
-                                <div class="form-floating">
-                                   <select class="form-select" id="dealership" name="dealership" required>
-                                    <option selected disabled value="">Select Dealership</option>
-                                    <option>iffco</option>
-                                   </select>
-                                    <label for="gname">Select Dealership</label>
+                        <form id="main-contact-form" method="POST" class="php-email-form" action="https://fertilizersdistributorship.in/process.php">
+                            <div class="row g-3">
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-floating">
+                                       <select class="form-select" id="dealership" name="franchise" required>
+                                        <option selected disabled value="">Select Dealership</option>
+                                        <option>iffco</option>
+                                       </select>
+                                        <label for="gname">Select Dealership</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" minlength="3" maxlength="25" class="form-control bg-light border-0" name="name" id="name" placeholder="Full Name" required>
-                                    <label for="gname">Full Name</label>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" minlength="3" maxlength="25" class="form-control bg-light border-0" name="fullname" id="name" placeholder="Full Name" required>
+                                        <label for="gname">Full Name</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" minlength="6" maxlength="35" class="form-control bg-light border-0" name="gmail" id="gmail" placeholder="Email" required>
-                                    <label for="gmail">Your Email</label>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" minlength="6" maxlength="35" class="form-control bg-light border-0" name="email" id="gmail" placeholder="Email" required>
+                                        <label for="gmail">Your Email</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="number" class="form-control bg-light border-0" maxlength="10" maxlength="10" name="mobile" id="mobile" placeholder="Mobile Number" required>
-                                    <label for="cname">Your Mobile Number</label>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control bg-light border-0" maxlength="10" maxlength="10" name="phone" id="mobile" placeholder="Mobile Number" required>
+                                        <label for="cname">Your Mobile Number</label>
+                                    </div>
                                 </div>
-                            </div>
-                           
-                            <div class="col-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0"  name="city" id="city" placeholder="City" required>
-                                    <label for="message">City</label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" name="state" id="state" placeholder="State" required>
-                                    <label for="message">State</label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-floating">
-                                    <input type="text"  minlength="6" maxlength="6" class="form-control bg-light border-0" name="pincode" id="pincode" placeholder="Pin Code" required>
-                                    <label for="message">Pin Code</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <select class="form-select" name="gender" id="gender" required>
-                                        <option selected disabled value="">Select Gender</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
-                                        <option>Other</option>
-                                      </select>
-                                    <label for="cage">Gender</label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-floating">
-                                    <select class="form-select" name="category" id="category" required>
-                                        <option disabled selected value="">Select Category</option>
-                                        <option>General</option>
-                                        <option>OBC</option>
-                                        <option>ST/SC</option>
-                                      </select>
-                                    <label for="message">Category</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-2 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="distributor">
-                                <label class="form-check-label text-white" for="exampleCheck1">I want to become a distributor.</label>
-                              </div>
-                            </div>  
-                            
-                            <div class="col-12 text-center">
-                                    
-					   <input type="submit" name="submit" class="btn btn-primary py-2 px-4" id="formid" value="Submit">
-					   <!--onclick="return submit_form();" -->
-                       <div id="formid0"></div>
                                
+                                <div class="col-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0"  name="address" id="city" placeholder="City" required>
+                                        <label for="message">City</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" name="state" id="state" placeholder="State" required>
+                                        <label for="message">State</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-floating">
+                                        <input type="text"  minlength="6" maxlength="6" class="form-control bg-light border-0" name="pincode" id="pincode" placeholder="Pin Code" required>
+                                        <label for="message">Pin Code</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="gender" id="gender" required>
+                                            <option selected disabled value="">Select Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                          </select>
+                                        <label for="cage">Gender</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="category" id="category" required>
+                                            <option disabled selected value="">Select Category</option>
+                                            <option>General</option>
+                                            <option>OBC</option>
+                                            <option>ST/SC</option>
+                                          </select>
+                                        <label for="message">Category</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-2 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="distributor">
+                                    <label class="form-check-label" for="exampleCheck1">I want to become a distributor.</label>
+                                  </div>
+                                </div>  
+                                
+                                <div class="col-12 text-center">
+                                        
+                           <input type="submit" name="submit" class="btn btn-primary py-2 px-4" id="formid" value="Submit">
+                           <!--onclick="return submit_form();" -->
+                           <div id="formid0"></div>
+                                   
+                                </div>
                             </div>
-                        </div>
-                        <span class="text-danger small">* Please fill all the form fields.</span>
-                    </form>
+                            <span class="text-danger small">* Please fill all the form fields.</span>
+                        </form>
                     </div>
                 </div>
             </div>

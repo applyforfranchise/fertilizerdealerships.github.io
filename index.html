@@ -60,12 +60,9 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <span class="fa fa-phone-alt me-2"></span>
-                    <span>+91 9038484870</span>
+                    <span> </span>
                 </div>
-                <!--<div class="h-100 d-inline-flex align-items-center">-->
-                <!--    <span class="far fa-envelope me-2"></span>-->
-                <!--    <span>iffcodealership6@gmail.com</span>-->
-                <!--</div>-->
+             
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
@@ -737,95 +734,9 @@
     
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 <script>
-    function submit_form(){
-        alert();
-var dealership= $("#dealership").val();
-  var name= $("#name").val();
-  var email= $("#gmail").val();
- var  mobile= $("#mnumber").val();
-  var city= $("#city").val();
- var  state= $("#state").val();
-  var pincode= $("#pincode").val();
-
-  var  gender= $("#gender").val();
-  var category= $("#category").val();
-
-
-  var emailReg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-       var nameReg = /^\s*[a-zA-Z\s]+\s*$/;
-       var PhoneReg = /^([0-9]{10,15})$/;
-    if(!isNaN(name)){
-  alert("Please Enter Only Characters & fill All Fields * ");
-    $('#name').css({"border-color": "red",});
-      return false; // keep form from submitting
-   }else{
-       $('#name').css({"border": "1px solid red !important;",});
-   }
-  if (mobile.length < 10) {
-        $('#mobile').css({"border": "1px solid red !important;",});
-        alert("Enter 10 Digit No"+mobile);
-     return false; // keep form from submitting
-   }else{
-       $('#mobile').css({"border": "1px solid black !important;",});
-   }
-  if (mobile.length > 10) {
-         $('#mobile').css({"border": "1px solid green !important;",});
-        alert("Enter 10 Digit No"+mobile);
-     return false; // keep form from submitting
-   }else{
-       $('#mobile').css({"border": "1px solid black !important;",});
-   }
-    
-    if(name !='' && email !='' && mobile !=''){
-   $("#formid").html("Please Wait...").attr('disabled','disabled');
-    $.ajax({
-   // url:"submitForm.php?action=submit_form&email="+email+"&mobile="+mobile,
-    url:"/submitForm.php?action=submit_form&email="+email+"&name="+name+"&mobile="+mobile+"&dealership="+dealership+"&city="+city+"&state="+state+"&pincode="+pincode+"&gender="+gender+"&category="+category,
-    type:"post",
-    catche:"false",
-    suceess : function(data){
-       
-      $("#main-contact-form")[0].reset();
-      $("#formid").html("submit").attr('disabled',false);
-      $("#dealership").val(""); 
-      $("#name").val('');
-      $("#gmail").val('');
-      $("#mobile").val('');
-    $("#city").val('');
-    $("#state").val('');
-    $("#pincode").val('');
-      $("#gender").val('');
-    $("#category").val('');
-    
-    }
-   })
-   
-  $("#main-contact-form").submit();
-    //location.reload();
-    $("#dealership").val(""); 
-      $("#name").val('');
-      $("#gmail").val('');
-      $("#mobile").val('');
-    $("#city").val('');
-    $("#state").val('');
-    $("#pincode").val('');
-      $("#gender").val('');
-    $("#category").val('');
-  $("#formid0").after('<span  id="timeout" style="color: green; border:1 px solid green; padding:5px 10px;">Thank you for Apply Fertilizer Dealership. As early as possible I will contact you.</span>');
-  setTimeout(function(){
-  document.getElementById('timeout').style.display='none';
-  },8000);
-
-    }else{
-    $("#formid").html("Send Now");
-    }
-    
-    return false;
-}
-
-// $(window).on('load', function() {
-//         $('#exampleModal').modal('show');
-//     });
+ $(window).on('load', function() {
+       $('#exampleModal').modal('show');
+   });
 </script>
 
 </body>
